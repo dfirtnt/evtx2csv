@@ -1,0 +1,13 @@
+md evtlogs_csv
+logparser.exe "select *  INTO evtlogs_csv/Security.csv from  '.\files\c\windows\system32\winevt\logs\Security.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/System.csv from  '.\files\c\windows\system32\winevt\logs\System.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-Windows-WMI-Activity-Operational.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-Windows-WMI-Activity%%4Operational.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-Windows-WinRM-Operational.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-Windows-WinRM%%4Operational.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-Windows-WMI-Activity-Operational.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-Windows-WMI-Activity%%4Operational.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-WindowsTerminalServicesRDPClient%%4Operational.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-WindowsTerminalServicesRDPClient%%4Operational.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-Windows-Task Scheduler%%4Maintenance.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-Windows-Task Scheduler%%4Maintenance.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-Windows-TaskScheduler%%4Operational.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-Windows-TaskScheduler%%4Operational.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-WindowsSmbClient%%4Security.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-WindowsSmbClient%%4Security.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-Windows-TerminalServices-LocalSessionManager%%4Operational.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-Windows-TerminalServices-LocalSessionManager%%4Operational.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-Windows-Bits-Client%%4Operational.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-Windows-Bits-Client%%4Operational.evtx'" -i:EVT -headers:ON
+logparser.exe "select *  INTO evtlogs_csv/Microsoft-Windows-Application-Experience%%4Program-Telemetry.csv from  '.\files\c\windows\system32\winevt\logs\Microsoft-Windows-Application-Experience%%4Program-Telemetry.evtx'" -i:EVT -headers:ON
